@@ -1,0 +1,10 @@
+﻿{
+	"name": "King_of_Petrichor",
+	"version_number": "1.0.0",
+	"website_url": "https://github.com/Klehrik/RoRR-King_of_Petrichor",
+	"description": "Introduces harder changes to the final boss' attacks.",
+	"dependencies": [
+		"ReturnOfModding-ReturnOfModding-1.0.34",
+		"Klehrik-HelperFunctions-1.0.9"
+	]
+}
