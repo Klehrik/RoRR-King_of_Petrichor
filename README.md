@@ -1,5 +1,5 @@
-Introduces harder changes to the final boss' attacks.
-Also adds a practice mode (under "Difficulty").
+Introduces harder changes to the final boss' attacks.  
+Also adds a practice mode (under "Difficulty").  
 
 Not officially supported in multiplayer (as of yet).
 
