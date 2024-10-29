@@ -1,4 +1,4 @@
--- King of Petrichor v1.0.0
+-- King of Petrichor
 -- Klehrik
 
 log.info("Successfully loaded ".._ENV["!guid"]..".")
@@ -202,13 +202,11 @@ gm.pre_script_hook(gm.constants.__input_system_tick, function(self, other, resul
 end)
 
 
-gm.pre_code_execute(function(self, other, code, result, flags)
+gm.pre_code_execute("gml_Object_oDirectorControl_Alarm_1", function(self, other)
     -- Prevent enemies from spawning in practice
-    if code.name:match("oDirectorControl_Alarm_1") then
-        if gm._mod_game_getDifficulty() == diff_id then
-            self:alarm_set(1, 60)
-            return false
-        end
+    if gm._mod_game_getDifficulty() == diff_id then
+        self:alarm_set(1, 60)
+        return false
     end
 end)
 
